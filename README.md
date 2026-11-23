@@ -64,7 +64,8 @@ Section `[AutoBot.AutoBotMutator]`:
 | `Aggression`    | 0.6     | CombatStyle: >0 charges, <0 keeps distance       |
 | `StrafeAbility` | 0.8     | -1..1                                            |
 | `AccuracyBonus` | 0.5     | -1..1                                            |
-| `bHuntItems`    | True    | low-health item hunting                          |
+| `bHuntItems`    | True    | when hurt in a fight, retreat to health/armor    |
+| `RetreatHealth` | 40      | health below which `bHuntItems` kicks in         |
 | `TuneInterval`  | 1.0     | seconds between bot re-tunes                     |
 
 UT2004 ini files don't support comments at the end of a line, so put only the
